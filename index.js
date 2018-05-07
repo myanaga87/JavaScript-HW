@@ -7,7 +7,7 @@ var cityButton = document.querySelector("#searchCity");
 var searchState = document.querySelector("#selectState");
 var searchCountry = document.querySelector("#selectCountry");
 var searchShape = document.querySelector("#selectShape");
-var clearFilters = document.querySelector("#clear");
+// var clearFilters = document.querySelector("#clear");
 
 // Add an event listener to the filters
 searchButton.addEventListener("click", handleSearch, {passive: true});
@@ -15,7 +15,7 @@ cityButton.addEventListener("click", handleCity, {passive: true});
 searchState.addEventListener("change", handleState, {passive: true});
 searchCountry.addEventListener("change", handleCountry, {passive: true});
 searchShape.addEventListener("change", handleShape, {passive: true});
-clearFilters.addEventListener("click", handleClear, {passive: true});
+// clearFilters.addEventListener("click", handleClear, {passive: true});
 
 // Set filteredDate to dateData
 var filteredDate = dataSet;
@@ -378,18 +378,18 @@ function handleShape() {
         renderTable();
     }
 
-// handle click function for clearing the filters
-function handleClear() {
-    var filteredDate = dataSet;
+// // handle click function for clearing the filters
+// function handleClear() {
+//     var filteredDate = dataSet;
     
-    return dateInput === "";
-    cityInput === "";
-    searchState === "SELECT...";
-    searchCountry === "SELECT...";
-    searchShape === "SELECT...";
+//     return dateInput === "";
+//     cityInput === "";
+//     searchState === "SELECT...";
+//     searchCountry === "SELECT...";
+//     searchShape === "SELECT...";
     
-    renderTable();
-}
+//     renderTable();
+// }
 
 // get list of states from the data
 var states = [];
